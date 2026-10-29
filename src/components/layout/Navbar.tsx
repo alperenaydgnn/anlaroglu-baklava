@@ -202,23 +202,23 @@ export function Navbar({ onOpenOrder }: NavbarProps) {
           {/* Quick Call Direct Line */}
           <div className="grid grid-cols-2 gap-2 text-xs">
             <a
-              href="tel:+903420000000"
+              href="tel:+905013320294"
               className="py-2.5 px-3 rounded-xl bg-[#FFFFFF] border border-[#E7E1D6] text-[#0F2217] flex items-center justify-center gap-1.5 font-medium"
             >
               <Phone className="w-3.5 h-3.5 text-[#C29F5C]" />
-              <span>Gaziantep Şube</span>
+              <span>Hatay (Defne)</span>
             </a>
             <a
-              href="tel:+903120000000"
+              href="tel:+905013320294"
               className="py-2.5 px-3 rounded-xl bg-[#FFFFFF] border border-[#E7E1D6] text-[#0F2217] flex items-center justify-center gap-1.5 font-medium"
             >
               <Phone className="w-3.5 h-3.5 text-[#C29F5C]" />
-              <span>Ankara Şube</span>
+              <span>İskenderun Şube</span>
             </a>
           </div>
 
           <p className="text-center text-[11px] text-[#6E655C] mt-1">
-            Gaziantep · Ankara · 1998'den Beri
+            Hatay · İskenderun · 1998'den Beri
           </p>
         </div>
       </div>

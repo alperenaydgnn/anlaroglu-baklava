@@ -87,7 +87,7 @@ export function OrderModal({ isOpen, onClose }: OrderModalProps) {
 
           {/* WhatsApp Direct Line */}
           <a
-            href="https://wa.me/903420000000?text=Merhaba,%20Anlaro%C4%9Flu%20Baklava%20sipari%C5%9Fi%20vermek%20istiyorum."
+            href="https://wa.me/905013320294?text=Merhaba,%20Anlaro%C4%9Flu%20Baklava%20sipari%C5%9Fi%20vermek%20istiyorum."
             target="_blank"
             rel="noopener noreferrer"
             className="w-full p-4 rounded-2xl bg-[#FFFFFF] border border-[#E7E1D6] hover:bg-[#0F2217] hover:text-[#FAF7F2] hover:border-[#0F2217] transition-all duration-300 flex items-center justify-between group"
@@ -136,7 +136,7 @@ export function OrderModal({ isOpen, onClose }: OrderModalProps) {
           </div>
           <div className="flex items-center gap-1.5">
             <MapPin className="w-3.5 h-3.5 text-[#C29F5C]" />
-            <span>Gaziantep & Ankara</span>
+            <span>Hatay & İskenderun</span>
           </div>
         </div>
       </div>

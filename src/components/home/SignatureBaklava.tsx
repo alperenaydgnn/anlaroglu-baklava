@@ -78,7 +78,7 @@ export function SignatureBaklava({ onSelectProduct, onExploreAll }: SignatureBak
               İmza Baklavalar
             </h2>
             <p className="font-['Manrope_Variable',sans-serif] text-xs sm:text-base text-[#6E655C] mt-1.5 sm:mt-2 max-w-xl leading-relaxed">
-              Tül inceliğindeki onlarca yufka, saf sadeyağ ve erken hasat Antep fıstığının fırından çıkan en seçkin kesimleri.
+              Tül inceliğindeki onlarca yufka, saf sadeyağ ve taze hasat fıstığın fırından çıkan en seçkin kesimleri.
             </p>
           </div>
 
@@ -139,7 +139,7 @@ export function SignatureBaklava({ onSelectProduct, onExploreAll }: SignatureBak
                 </div>
 
                 <p className="font-['Manrope_Variable',sans-serif] text-[11px] sm:text-xs lg:text-sm text-[#6E655C] mt-1 line-clamp-2 leading-relaxed">
-                  {product.note ?? 'Taze hasat Antep fıstığı ve sadeyağ ile hazırlanmış taş fırın klasiği.'}
+                  {product.note ?? 'Taze hasat fıstık ve saf sadeyağ ile hazırlanmış taş fırın klasiği.'}
                 </p>
               </div>
             </div>

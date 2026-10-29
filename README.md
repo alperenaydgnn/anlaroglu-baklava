@@ -1,13 +1,13 @@
 # Anlaroğlu Baklava — Resmi Web Sitesi
 
-Gaziantep geleneksel tatlı sanatının asırlık mirasını modern gastronomi estetiği ve sessiz lüks (quiet luxury) editoryal anlayışıyla buluşturan kurumsal web platformu.
+Hatay geleneksel tatlı sanatının mirasını modern gastronomi estetiği ve sessiz lüks (quiet luxury) editoryal anlayışıyla buluşturan kurumsal web platformu.
 
 ## 🌟 Proje Özellikleri
 
 - **Haute Gastronomie Tasarım Dili:** Derin fıstık yeşili (`#0F2217`), sıcak alabaster (`#FAF7F2`) ve şampanya bronzu (`#C29F5C`) renk mimarisi.
 - **Sinematik Görsel Deneyim:** Yüksek çözünürlüklü makro yemek fotoğrafçılığı, WebP optimizasyonu ve duyarlı medya yönetimi.
 - **260+ Ürünlük Otantik Menü Kataloğu:** Karekod menüden çıkarılan 264 ürün, kategori filtreleme ve anlık arama desteği.
-- **Çok Kanallı Sipariş ve İletişim:** Gaziantep Merkez Şube, Ankara Şubesi, WhatsApp doğrudan sipariş hattı ve dijital menü entegrasyonu.
+- **Çok Kanallı Sipariş ve İletişim:** Hatay Defne Merkez Şube, İskenderun Şubesi, WhatsApp doğrudan sipariş hattı (0501 332 02 94) ve dijital menü entegrasyonu.
 - **Tipografi:** Başlıklarda `Cormorant Garamond Variable` serif, arayüzde `Manrope Variable` sans-serif.
 - **Performans & Erişilebilirlik:** Vite 8 + React 19 + Tailwind CSS v4, sıfır gereksiz JS yükü ve kusursuz responsive düzen.
 

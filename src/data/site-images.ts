@@ -32,14 +32,14 @@ export const siteImages = {
     alt: 'Koyu taş zemin üzerinde taze şerbetiyle parıldayan altın sarısı fıstıklı baklava dilimleri',
     objectPosition: 'center 45%',
     objectFit: 'cover',
-    caption: 'Tepside taze kesim Antep fıstıklı baklava',
+    caption: 'Tepside taze kesim bol fıstıklı baklava',
   },
 
   // === İMZA BAKLAVALAR VİTRİNİ ===
   ozelBaklava: {
     webp: '/images/products/ozel-baklava.webp',
     fallback: '/images/products/ozel-baklava.jpg',
-    alt: 'Bol Antep fıstıklı, çıtır katmanlı Anlaroğlu Özel Baklava porsiyonu',
+    alt: 'Bol fıstıklı, çıtır katmanlı Anlaroğlu Özel Baklava porsiyonu',
     objectPosition: 'center center',
     objectFit: 'cover',
     caption: 'Özel Baklava',
@@ -63,7 +63,7 @@ export const siteImages = {
   midye: {
     webp: '/images/products/midye.webp',
     fallback: '/images/products/midye.jpg',
-    alt: 'Özel Anlaroğlu ahşap sunum tabağında midye baklava ve taze Antep fıstığı taneleri',
+    alt: 'Özel Anlaroğlu ahşap sunum tabağında midye baklava ve taze fıstık taneleri',
     objectPosition: 'center 55%',
     objectFit: 'cover',
     caption: 'Midye Baklava',
@@ -89,10 +89,10 @@ export const siteImages = {
   pistachioMacro: {
     webp: '/images/brand/pistachio-macro.webp',
     fallback: '/images/brand/pistachio-macro.jpg',
-    alt: 'Baklava katmanları üzerine serpilen taze dövülmüş zümrüt yeşili Antep fıstığının makro dokusu',
+    alt: 'Baklava katmanları üzerine serpilen taze dövülmüş zümrüt yeşili fıstığın makro dokusu',
     objectPosition: 'center center',
     objectFit: 'cover',
-    caption: 'Doğal Antep Fıstığı Dokusu',
+    caption: 'Doğal Yeşil Fıstık Dokusu',
   },
   layersMacro: {
     webp: '/images/brand/layers-macro.webp',
@@ -148,10 +148,10 @@ export const siteImages = {
   katmer: {
     webp: '/images/categories/katmer.webp',
     fallback: '/images/categories/katmer.jpg',
-    alt: 'Sahan kaymağı ve bol Antep fıstıklı çıtır Gaziantep katmeri',
+    alt: 'Sahan kaymağı ve bol yeşil fıstıklı çıtır taş fırın katmeri',
     objectPosition: 'center center',
     objectFit: 'cover',
-    caption: 'Gaziantep Katmeri',
+    caption: 'Taş Fırın Katmeri',
   },
   sutluTatlilar: {
     webp: '/images/categories/sutlu-tatlilar.webp',

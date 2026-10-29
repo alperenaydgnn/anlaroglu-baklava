@@ -19,7 +19,7 @@ export function Footer() {
         <div className="pb-14 border-b border-[#1C3D2B] flex flex-col md:flex-row items-start md:items-end justify-between gap-8">
           <div>
             <span className="font-['Manrope_Variable',sans-serif] text-xs font-semibold tracking-[0.25em] text-[#C29F5C] uppercase block mb-2">
-              Gaziantep · 1998'den Beri
+              Hatay · 1998'den Beri
             </span>
             <h2 className="font-['Cormorant_Garamond_Variable',serif] text-5xl sm:text-7xl lg:text-8xl tracking-[0.06em] text-[#FAF7F2] uppercase leading-none font-normal">
               {siteConfig.brandName}
@@ -152,7 +152,7 @@ export function Footer() {
         {/* Bottom Disclaimer & Copyright */}
         <div className="pt-8 border-t border-[#1C3D2B] flex flex-col sm:flex-row items-center justify-between text-[11px] text-[#E7E1D6]/50 gap-4">
           <p>© {new Date().getFullYear()} Anlaroğlu Baklava. Tüm hakları saklıdır.</p>
-          <p>Gaziantep Geleneksel Tatlı Sanatı · Kurumsal Tanıtım Platformu</p>
+          <p>Hatay Geleneksel Tatlı Sanatı · Kurumsal Tanıtım Platformu</p>
         </div>
       </div>
     </footer>

@@ -35,7 +35,7 @@ export const categories: CategoryInfo[] = [
     slug: 'baklavalar',
     name: 'Baklavalar',
     shortTitle: 'Geleneksel Baklavalar',
-    description: 'İncecik açılan yufka katmanları, taze Antep fıstığı ve altın sarısı kıvamında şerbet.',
+    description: 'İncecik açılan yufka katmanları, taze fıstık ve altın sarısı kıvamında şerbet.',
     featuredImage: '/images/products/ozel-baklava.webp',
     isPrimaryDessert: true,
     badge: 'İmza Koleksiyon',
@@ -44,7 +44,7 @@ export const categories: CategoryInfo[] = [
     slug: 'kunefeler',
     name: 'Künefeler',
     shortTitle: 'Sıcak Künefeler',
-    description: 'Bakır tepside nar gibi kızaran tel kadayıf, sünme kıvamında özel peynir ve bol Antep fıstığı.',
+    description: 'Bakır tepside nar gibi kızaran tel kadayıf, sünme kıvamında Hatay peyniri ve bol fıstık.',
     featuredImage: '/images/categories/kunefe.webp',
     isPrimaryDessert: true,
     badge: 'Tepside Sıcak',
@@ -52,7 +52,7 @@ export const categories: CategoryInfo[] = [
   {
     slug: 'katmerler',
     name: 'Katmerler',
-    shortTitle: 'Gaziantep Katmeri',
+    shortTitle: 'Taş Fırın Katmeri',
     description: 'Zarf gibi katlanan çıtır yufka, sahan kaymağı ve yoğun fıstık dolgusuyla sıcacık sunum.',
     featuredImage: '/images/categories/katmer.webp',
     isPrimaryDessert: true,
@@ -93,7 +93,7 @@ export const categories: CategoryInfo[] = [
     slug: 'dondurmalar',
     name: 'Dondurmalar',
     shortTitle: 'Maraş & Fıstıklı Dondurma',
-    description: 'Hakiki Antep fıstığı ezmeli, yoğun kıvamlı kesme dondurma çeşitleri.',
+    description: 'Hakiki yeşil fıstık ezmeli, yoğun kıvamlı kesme dondurma çeşitleri.',
     isPrimaryDessert: true,
   },
   {
@@ -120,7 +120,7 @@ export const categories: CategoryInfo[] = [
     slug: 'pogaca-simit',
     name: 'Poğaça & Simit',
     shortTitle: 'Fırından Taze',
-    description: 'Fırından yeni çıkmış sıcak Ankara simidi, su böreği ve tereyağlı açmalar.',
+    description: 'Fırından yeni çıkmış sıcak çıtır simit, su böreği ve tereyağlı açmalar.',
   },
   {
     slug: 'ana-yemek',
@@ -168,6 +168,6 @@ export const categories: CategoryInfo[] = [
     slug: 'extralar',
     name: 'Ekstralar',
     shortTitle: 'Kaymak & Fıstık İlavesi',
-    description: 'Sahan kaymağı, dövme Antep fıstığı tozu ve özel dondurma topları.',
+    description: 'Sahan kaymağı, dövme taze fıstık tozu ve özel dondurma topları.',
   },
 ]

@@ -12,7 +12,7 @@ export function CategoryExplorer({ onOpenAllProducts }: CategoryExplorerProps) {
   const collections = [
     {
       title: 'Sıcak Künefeler',
-      subtitle: 'Bakır tepside közde nar gibi kızaran tel kadayıf, sünme peynir ve bol Antep fıstığı.',
+      subtitle: 'Bakır tepside közde nar gibi kızaran tel kadayıf, taze Hatay peyniri ve bol fıstık.',
       image: siteImages.kunefe,
       count: '12 Çeşit',
       tag: 'Közde Pişirim',
@@ -33,7 +33,7 @@ export function CategoryExplorer({ onOpenAllProducts }: CategoryExplorerProps) {
     },
     {
       title: 'Butik Pasta & Cheesecake',
-      subtitle: 'Karamelize San Sebastian, Belçika çikolatalı ve Antep fıstıklı özel pastalar.',
+      subtitle: 'Karamelize San Sebastian, Belçika çikolatalı ve yoğun fıstıklı butik pastalar.',
       image: siteImages.pastaTatli,
       count: '16 Çeşit',
       tag: 'Özel İmalat',
@@ -46,8 +46,8 @@ export function CategoryExplorer({ onOpenAllProducts }: CategoryExplorerProps) {
       tag: 'Belçika Çikolatası',
     },
     {
-      title: 'Gaziantep Kahvaltı Sofrası',
-      subtitle: 'Bakır sahanda tereyağlı yumurta, peynir çeşitleri, çıtır simit ve demlik çay.',
+      title: 'Hatay Serpme Kahvaltısı',
+      subtitle: 'Bakır sahanda tereyağlı yumurta, yöresel peynirler, çıtır simit ve demlik çay.',
       image: siteImages.kahvalti,
       count: 'Serpme & Porsiyon',
       tag: 'Her Sabah 08:30',

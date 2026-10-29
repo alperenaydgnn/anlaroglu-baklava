@@ -71,7 +71,7 @@ export function Hero() {
         <div ref={contentRef} className="max-w-2xl">
           {/* Refined Brand Subhead - Quiet, No tacky badges */}
           <p className="text-xs sm:text-sm font-semibold tracking-[0.2em] uppercase text-[#C29F5C] mb-3 sm:mb-4">
-            Gaziantep · 1998'den Beri
+            Hatay · 1998'den Beri
           </p>
 
           {/* Headline - Unified, Character-Rich Editorial Serif */}
@@ -81,8 +81,8 @@ export function Hero() {
 
           {/* Descriptive Craft Statement */}
           <p className="font-['Manrope_Variable',sans-serif] text-sm sm:text-base lg:text-lg text-[#E7E1D6]/90 leading-relaxed font-normal mb-8 max-w-xl">
-            Urfa saf sadeyağı, erken hasat boz Antep fıstığı ve elle açılan tül yufkaların altın dengesi.
-            Geleneksel tatlı sanatını çağdaş gastronomi zarafetiyle sunuyoruz.
+            Doğal saf sadeyağ, taze hasat yeşil fıstık ve elle açılan tül yufkaların altın dengesi.
+            Hatay'ın kadim tatlı kültürünü çağdaş gastronomi zarafetiyle sunuyoruz.
           </p>
 
           {/* Direct, Restrained CTAs */}
@@ -113,7 +113,7 @@ export function Hero() {
             <span>·</span>
             <span>Saf Sadeyağ</span>
             <span>·</span>
-            <span>Gaziantep & Ankara</span>
+            <span>Hatay & İskenderun</span>
           </div>
         </div>
       </div>
