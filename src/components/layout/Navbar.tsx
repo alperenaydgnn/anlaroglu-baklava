@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Menu, X, ShoppingBag } from 'lucide-react'
+import { Menu, X, ShoppingBag, Phone } from 'lucide-react'
 
 interface NavbarProps {
   onOpenOrder: () => void
@@ -42,12 +42,12 @@ export function Navbar({ onOpenOrder }: NavbarProps) {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? 'bg-[#FAF7F2]/95 backdrop-blur-md py-3 border-b border-[#E7E1D6] shadow-sm text-[#0F2217]'
-            : 'bg-[#FAF7F2]/90 backdrop-blur-sm py-4 border-b border-[#E7E1D6]/60 text-[#0F2217]'
+            ? 'bg-[#FAF7F2]/95 backdrop-blur-md py-2.5 sm:py-3 border-b border-[#E7E1D6] shadow-sm text-[#0F2217]'
+            : 'bg-[#FAF7F2]/90 backdrop-blur-sm py-3.5 sm:py-4 border-b border-[#E7E1D6]/60 text-[#0F2217]'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-          {/* Logo - Native on Alabaster background, no artificial box */}
+          {/* Logo - Native on Alabaster background */}
           <a
             href="#"
             onClick={(e) => {
@@ -60,11 +60,11 @@ export function Navbar({ onOpenOrder }: NavbarProps) {
             <img
               src="/images/brand/anlaroglu-logo.png"
               alt="Anlaroğlu Baklava"
-              className="h-9 sm:h-11 w-auto object-contain"
+              className="h-8 sm:h-11 w-auto object-contain"
             />
           </a>
 
-          {/* Center Navigation - Understated Editorial Style */}
+          {/* Center Navigation - Desktop */}
           <nav className="hidden md:flex items-center space-x-10 text-[13px] tracking-[0.16em] uppercase font-medium text-[#0F2217]">
             <button
               onClick={() => scrollTo('hero')}
@@ -92,7 +92,7 @@ export function Navbar({ onOpenOrder }: NavbarProps) {
             </button>
           </nav>
 
-          {/* Right Action: Pure Luxury Button */}
+          {/* Right Action: Desktop Luxury Button */}
           <div className="hidden sm:flex items-center space-x-4">
             <button
               onClick={onOpenOrder}
@@ -103,72 +103,121 @@ export function Navbar({ onOpenOrder }: NavbarProps) {
             </button>
           </div>
 
-          {/* Mobile Bar */}
-          <div className="flex items-center gap-3 md:hidden">
+          {/* Mobile Bar - Compact & Tactile */}
+          <div className="flex items-center gap-2 md:hidden">
             <button
               onClick={onOpenOrder}
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#0F2217] text-[#FAF7F2] text-xs font-semibold uppercase tracking-wider"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#0F2217] text-[#FAF7F2] text-xs font-semibold uppercase tracking-wider active:scale-95 transition-transform"
             >
               <ShoppingBag className="w-3.5 h-3.5" />
               <span>Sipariş</span>
             </button>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="p-1.5 text-[#0F2217] hover:text-[#C29F5C] transition-colors cursor-pointer"
+              className="p-2 text-[#0F2217] hover:text-[#C29F5C] transition-colors cursor-pointer"
               aria-label={mobileOpen ? 'Menüyü kapat' : 'Menüyü aç'}
             >
-              {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>
       </header>
 
-      {/* Mobile Drawer */}
+      {/* Mobile Drawer - Fullscreen Haute Gastronomie Salon Menu */}
       <div
-        className={`fixed inset-0 z-40 bg-[#FAF7F2] text-[#0F2217] flex flex-col justify-between p-8 pt-28 transition-transform duration-400 md:hidden ${
+        className={`fixed inset-0 z-50 bg-[#FAF7F2] text-[#0F2217] flex flex-col justify-between p-6 sm:p-8 pt-6 transition-transform duration-350 ease-out md:hidden overflow-y-auto ${
           mobileOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
         aria-hidden={!mobileOpen}
       >
-        <div className="flex flex-col space-y-6 text-2xl font-['Cormorant_Garamond_Variable',serif]">
+        {/* Top Drawer Header with Brand & Close Button */}
+        <div className="flex items-center justify-between pb-5 border-b border-[#E7E1D6]">
+          <img
+            src="/images/brand/anlaroglu-logo.png"
+            alt="Anlaroğlu Baklava"
+            className="h-8 w-auto object-contain"
+          />
           <button
-            onClick={() => scrollTo('hero')}
-            className="text-left py-2 border-b border-[#E7E1D6] hover:text-[#C29F5C] transition-colors"
+            onClick={() => setMobileOpen(false)}
+            className="w-9 h-9 rounded-full bg-[#0F2217]/5 flex items-center justify-center text-[#0F2217] active:bg-[#0F2217]/10"
+            aria-label="Menüyü kapat"
           >
-            Anasayfa
-          </button>
-          <button
-            onClick={() => scrollTo('imza-baklavalar')}
-            className="text-left py-2 border-b border-[#E7E1D6] hover:text-[#C29F5C] transition-colors"
-          >
-            İmza Baklavalar
-          </button>
-          <button
-            onClick={() => scrollTo('lezzet-dunyasi')}
-            className="text-left py-2 border-b border-[#E7E1D6] hover:text-[#C29F5C] transition-colors"
-          >
-            Menü Koleksiyonu
-          </button>
-          <button
-            onClick={() => scrollTo('subeler')}
-            className="text-left py-2 border-b border-[#E7E1D6] hover:text-[#C29F5C] transition-colors"
-          >
-            Şubelerimiz & İletişim
+            <X className="w-5 h-5" />
           </button>
         </div>
 
-        <div className="pt-8 border-t border-[#E7E1D6] flex flex-col gap-3 font-['Manrope_Variable',sans-serif]">
+        {/* Navigation Links with Editorial Serif Numbers */}
+        <div className="py-8 flex flex-col space-y-5 text-xl font-['Cormorant_Garamond_Variable',serif]">
+          <button
+            onClick={() => scrollTo('hero')}
+            className="flex items-baseline justify-between py-2 border-b border-[#E7E1D6]/60 text-left hover:text-[#C29F5C] transition-colors"
+          >
+            <span className="text-2xl font-normal">Anasayfa</span>
+            <span className="text-xs font-['Manrope_Variable',sans-serif] text-[#C29F5C] uppercase tracking-widest">
+              01
+            </span>
+          </button>
+          <button
+            onClick={() => scrollTo('imza-baklavalar')}
+            className="flex items-baseline justify-between py-2 border-b border-[#E7E1D6]/60 text-left hover:text-[#C29F5C] transition-colors"
+          >
+            <span className="text-2xl font-normal">İmza Baklavalar</span>
+            <span className="text-xs font-['Manrope_Variable',sans-serif] text-[#C29F5C] uppercase tracking-widest">
+              02
+            </span>
+          </button>
+          <button
+            onClick={() => scrollTo('lezzet-dunyasi')}
+            className="flex items-baseline justify-between py-2 border-b border-[#E7E1D6]/60 text-left hover:text-[#C29F5C] transition-colors"
+          >
+            <span className="text-2xl font-normal">Menü Koleksiyonu</span>
+            <span className="text-xs font-['Manrope_Variable',sans-serif] text-[#C29F5C] uppercase tracking-widest">
+              03
+            </span>
+          </button>
+          <button
+            onClick={() => scrollTo('subeler')}
+            className="flex items-baseline justify-between py-2 border-b border-[#E7E1D6]/60 text-left hover:text-[#C29F5C] transition-colors"
+          >
+            <span className="text-2xl font-normal">Şubelerimiz & İletişim</span>
+            <span className="text-xs font-['Manrope_Variable',sans-serif] text-[#C29F5C] uppercase tracking-widest">
+              04
+            </span>
+          </button>
+        </div>
+
+        {/* Quick Mobile Action Card */}
+        <div className="pt-6 border-t border-[#E7E1D6] flex flex-col gap-3 font-['Manrope_Variable',sans-serif]">
           <button
             onClick={() => {
               setMobileOpen(false)
               onOpenOrder()
             }}
-            className="w-full text-center py-4 rounded-full bg-[#0F2217] text-[#FAF7F2] font-semibold text-xs uppercase tracking-[0.16em] flex items-center justify-center gap-2"
+            className="w-full py-3.5 rounded-full bg-[#0F2217] text-[#FAF7F2] font-semibold text-xs uppercase tracking-[0.16em] flex items-center justify-center gap-2 shadow-md active:scale-98 transition-transform"
           >
             <ShoppingBag className="w-4 h-4" />
             <span>Sipariş Ver & İletişim</span>
           </button>
-          <p className="text-center text-xs text-[#6E655C] mt-2">
+
+          {/* Quick Call Direct Line */}
+          <div className="grid grid-cols-2 gap-2 text-xs">
+            <a
+              href="tel:+903420000000"
+              className="py-2.5 px-3 rounded-xl bg-[#FFFFFF] border border-[#E7E1D6] text-[#0F2217] flex items-center justify-center gap-1.5 font-medium"
+            >
+              <Phone className="w-3.5 h-3.5 text-[#C29F5C]" />
+              <span>Gaziantep Şube</span>
+            </a>
+            <a
+              href="tel:+903120000000"
+              className="py-2.5 px-3 rounded-xl bg-[#FFFFFF] border border-[#E7E1D6] text-[#0F2217] flex items-center justify-center gap-1.5 font-medium"
+            >
+              <Phone className="w-3.5 h-3.5 text-[#C29F5C]" />
+              <span>Ankara Şube</span>
+            </a>
+          </div>
+
+          <p className="text-center text-[11px] text-[#6E655C] mt-1">
             Gaziantep · Ankara · 1998'den Beri
           </p>
         </div>

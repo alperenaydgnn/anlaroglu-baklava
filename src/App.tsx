@@ -8,6 +8,7 @@ import { Footer } from './components/layout/Footer'
 import { ProductModal } from './components/products/ProductModal'
 import { AllProductsModal } from './components/products/AllProductsModal'
 import { OrderModal } from './components/common/OrderModal'
+import { MobileFloatingBar } from './components/common/MobileFloatingBar'
 import type { Product } from './data/products'
 
 export function App() {
@@ -60,6 +61,9 @@ export function App() {
         isOpen={isOrderOpen}
         onClose={() => setIsOrderOpen(false)}
       />
+
+      {/* Mobile Floating Quick Action Bar */}
+      <MobileFloatingBar onOpenOrder={() => setIsOrderOpen(true)} />
     </div>
   )
 }

@@ -86,18 +86,18 @@ export function Hero() {
           </p>
 
           {/* Direct, Restrained CTAs */}
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex items-center gap-2.5 sm:gap-4">
             <button
               onClick={() => scrollToSection('imza-baklavalar')}
-              className="group inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#C29F5C] text-[#0F2217] font-semibold text-xs tracking-[0.16em] uppercase hover:bg-[#FAF7F2] transition-all duration-300 shadow-md cursor-pointer"
+              className="group flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-4 py-3 sm:px-7 sm:py-3.5 rounded-full bg-[#C29F5C] text-[#0F2217] font-semibold text-[11px] sm:text-xs tracking-[0.14em] uppercase hover:bg-[#FAF7F2] transition-all duration-300 shadow-md cursor-pointer whitespace-nowrap"
             >
-              <span>İmza Koleksiyonu Keşfet</span>
-              <ArrowDownRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:translate-y-0.5" />
+              <span>İmza Koleksiyon</span>
+              <ArrowDownRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:translate-y-0.5" />
             </button>
 
             <button
               onClick={() => scrollToSection('subeler')}
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-[#E7E1D6]/40 bg-[#0F2217]/50 backdrop-blur-sm text-[#FAF7F2] font-medium text-xs tracking-[0.14em] uppercase hover:bg-[#0F2217] hover:border-[#C29F5C] transition-all duration-300 cursor-pointer"
+              className="inline-flex items-center justify-center gap-1.5 px-4 py-3 sm:px-6 sm:py-3.5 rounded-full border border-[#E7E1D6]/40 bg-[#0F2217]/50 backdrop-blur-sm text-[#FAF7F2] font-medium text-[11px] sm:text-xs tracking-[0.12em] uppercase hover:bg-[#0F2217] hover:border-[#C29F5C] transition-all duration-300 cursor-pointer whitespace-nowrap"
             >
               <MapPin className="w-3.5 h-3.5 text-[#C29F5C]" />
               <span>Şubelerimiz</span>
@@ -106,10 +106,10 @@ export function Hero() {
         </div>
 
         {/* Minimal Bottom Metadata Bar */}
-        <div className="mt-12 sm:mt-16 pt-5 border-t border-[#E7E1D6]/20 flex flex-col sm:flex-row items-start sm:items-center justify-between text-xs tracking-widest text-[#E7E1D6]/70 uppercase font-['Manrope_Variable',sans-serif] gap-2">
+        <div className="mt-8 sm:mt-16 pt-4 sm:pt-5 border-t border-[#E7E1D6]/20 flex flex-col sm:flex-row items-start sm:items-center justify-between text-[10px] sm:text-xs tracking-widest text-[#E7E1D6]/70 uppercase font-['Manrope_Variable',sans-serif] gap-1.5 sm:gap-2">
           <span>Anlaroğlu Baklava & Pâtisserie</span>
-          <div className="flex items-center gap-6 text-[11px] text-[#E7E1D6]/60">
-            <span>Taş Fırın İmalatı</span>
+          <div className="flex items-center gap-3 sm:gap-6 text-[10px] sm:text-[11px] text-[#E7E1D6]/60">
+            <span>Taş Fırın</span>
             <span>·</span>
             <span>Saf Sadeyağ</span>
             <span>·</span>
